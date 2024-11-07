@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Transform-origin</title>
+</head>
+
+<style>
+
+    .principal-teste {
+        width: 200px;
+        height: 200px;
+        background-image: url("/assets/images/fusca.png");
+        background-repeat: no-repeat;
+        transform: rotate(0deg) ;
+        background-size: contain;
+        transform-origin: 0 0;
+    }
+
+    button:hover {
+        transition: 0.5s;
+        transform: scale(1.2);
+        transform-origin: 100px 20px;
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade transform-origin
+                </h1>
+                <p>
+                    Define o ponto de origem da transformação do elemento.
+                </p>
+              
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>x-axis, y-axis, z-axis, initial, inherit, none e unset</p>
+                <p><strong>Valor Padrão:</strong>none</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </div>
+        </section>
+
+
+        <section class="principal-teste">
+
+            <div>
+                <button>Transição!</button>
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
