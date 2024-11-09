@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Transform-style</title>
+</head>
+
+<style>
+
+    #dado {
+        width: 150px;
+        height: 150px;
+        margin: 100px;
+        transform: rotate3d(1, 1, 1, 90deg);
+        transform-style: preserve-3d ;
+        
+    }
+
+    #dado > div {
+        background-image: url(/assets/images/dado.png);
+        background-size: 520px;
+        border: red 1px solid;
+        width: 100%;
+        height: 100%;
+        opacity: .9;
+        position: absolute;
+    }
+
+    #um {
+        background-position: -183px -15px;
+        transform: translateZ(75px);
+    }
+
+    #dois{
+        background-position: -183px -150px;
+        transform: rotatex(-90deg) translateZ(75px);
+    }
+
+    #tres {
+        background-position: -183px -300px;
+        transform: rotateY(90deg) translateZ(-75px);
+    }
+    #quatro {
+        background-position: -183px -450px;
+        transform: rotatex(-90deg) translateZ(-75px);
+    }
+    #cinco {
+        background-position: -310px -900px;
+        transform: translateZ(-75px);
+    }
+    #seis {
+        background-position: -50px -900px;
+        transform: rotateY(90deg) translateZ(75px);
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade transform-style
+                </h1>
+                <p>
+                    Esta propiedade CSS define se elementos que estiverem dentro de espaços 3D serão
+                    renderizados normalmente ou então serão achatados para caber em tais áreas.
+                </p>
+              
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>flat, preserve-3d, initial, inherit, unset</p>
+                <p><strong>Valor Padrão:</strong>flat</p>
+                <p><strong>Valor Herdado:</strong>não</p>
+            </div>
+        </section>
+
+
+  
+
+            <div id="dado">
+               <div id="um"></div>
+               <div id="dois"></div>
+               <div id="tres"></div>
+               <div id="quatro"></div>
+               <div id="cinco"></div>
+               <div id="seis"></div>
+            </div>
+
+
+
+
+    </main>
+
+</body>
+
+</html>
