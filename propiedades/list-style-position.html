@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>list-style-position</title>
+</head>
+
+<style>
+     * {
+    box-sizing: border-box;
+   }
+   body {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80vh;
+   }
+   li {
+    list-style-type: square;
+    list-style-position: inside;
+
+   }
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade list-style-position
+                </h1>
+                <p>
+                    Define a posição dos marcadores em uma lista de itens, ou seja, se esses marcadores 
+                    ficarão dentro ou fora dos limites da área de cada item
+                </p>
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>inside, outside, inherit, unset e initial</p>
+                <p><strong>Valor Padrão:</strong>outside</p>
+                <p><strong>Valor Herdado:</strong>Sim</p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+           <ul>
+            <li>Sonic</li>
+            <li>Mario</li>
+            <li>Need for speed</li>
+            <li>Donkey kong</li>
+           </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
