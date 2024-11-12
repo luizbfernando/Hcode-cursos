@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>object-fit</title>
+</head>
+
+<style>
+    
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        width: 200px;
+        text-align: center;
+        border: black 1px solid;
+        padding: 4px;
+        box-shadow: 2px 10px 10px white;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .fill {
+        object-fit: fill;
+        /* Preenche tudo */
+    }
+
+    .contain {
+        object-fit: contain;
+        /* Mantem as proporções originais da imagem */
+    }
+    .cover {
+        object-fit: cover;
+         /* preenche tudo mas sem esticar imagem*/
+    }
+    .scale-down {
+        object-fit: scale-down;
+         /*Igual ao cover mas escalando para baixo, sem preencher tudo*/
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade list-style
+                </h1>
+                <p>
+                    Define como um elemento de imagem ou vídeo deve ser redimensionado para que consiga 
+                    caber dentro do contâiner que está inserido.
+                </p>
+                <p>
+                    Esta propiedade pode fazer um vídeo/imagem preservar suas proporções ou ser esticado para
+                    caber. 
+                </p>
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>fill, contain, cover, none, 
+                    scale-down inherit, unset e initial</p>
+                <p><strong>Valor Padrão:</strong>fill</p>
+                <p><strong>Valor Herdado:</strong>Não</p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <figure class="fill">
+                    <img src="/assets/images/fusca.png" alt="Fusca">
+                    <figcaption>
+                        Esta imagem é para quem gosta de fusca
+                    </figcaption>
+                </figure>
+                <figure class="contain">
+                    <img src="/assets/images/fusca.png" alt="Fusca">
+                    <figcaption>
+                        Esta imagem é para quem gosta de fusca
+                    </figcaption>
+                </figure>
+                <figure class="cover">
+                    <img src="/assets/images/fusca.png" alt="Fusca">
+                    <figcaption>
+                        Esta imagem é para quem gosta de fusca
+                    </figcaption>
+                </figure>
+                <figure class="scale-down">
+                    <img src="/assets/images/fusca.png" alt="Fusca">
+                    <figcaption>
+                        Esta imagem é para quem gosta de fusca
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
