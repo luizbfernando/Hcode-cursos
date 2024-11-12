@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <title>object-fit</title>
+    <title>object-position</title>
 </head>
 
 <style>
-    
     .content {
         display: flex;
         flex-wrap: wrap;
@@ -34,36 +33,38 @@
     }
 
     .contain {
+        object-position: 30% 30%;
         object-fit: contain;
         /* Mantem as proporções originais da imagem */
     }
+
     .cover {
         object-fit: cover;
-         /* preenche tudo mas sem esticar imagem*/
-    }
-    .scale-down {
-        object-fit: scale-down;
-         /*Igual ao cover mas escalando para baixo, sem preencher tudo*/
+        /* preenche tudo mas sem esticar imagem*/
     }
 
+    .scale-down {
+        object-fit: scale-down;
+        /*Igual ao cover mas escalando para baixo, sem preencher tudo*/
+    }
 </style>
 
 <body>
 
     <main>
 
-        <section class="principal">
+         
+        <section class="principal-css">
             <div class="content">
                 <h1>
-                    Propriedade object-fit
+                    Propriedade object-positon
                 </h1>
                 <p>
-                    Define como um elemento de imagem ou vídeo deve ser redimensionado para que consiga 
-                    caber dentro do contâiner que está inserido.
+                    Essa propiedade CSS define as posições para um elemento de imagem ou vídeo dentro
+                    do contâiner em que está inserido
                 </p>
                 <p>
-                    Esta propiedade pode fazer um vídeo/imagem preservar suas proporções ou ser esticado para
-                    caber. 
+                    Muito útil se usada com o object-fit
                 </p>
 
             </div>
@@ -72,10 +73,9 @@
         <section class="principal-css">
             <div class="content">
                 <h2>Valores</h2>
-                <p><strong>Valores possíveis:</strong>fill, contain, cover, none, 
-                    scale-down inherit, unset e initial</p>
-                <p><strong>Valor Padrão:</strong>fill</p>
-                <p><strong>Valor Herdado:</strong>Não</p>
+                <p><strong>Valores possíveis:</strong>position, unset e initial</p>
+                <p><strong>Valor Padrão:</strong>50% 50%</p>
+                <p><strong>Valor Herdado:</strong>Sim</p>
             </div>
         </section>
 
