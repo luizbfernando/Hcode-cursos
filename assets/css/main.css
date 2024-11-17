@@ -1,4 +1,9 @@
 .principal-teste {
-    max-width: 16vw;
+    width: fit-content;
 }
+
+.principal-css {
+    width: min-content;
+}
+
 
