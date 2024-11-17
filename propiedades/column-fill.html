@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Colum-fill</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80vw;
+    }
+
+    .content {
+        columns: 160px 4;
+        column-gap: 10%;
+    }
+
+    #a {
+        column-fill: balance;
+    }
+    #b {
+        column-fill: auto;
+        height: 200px;
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade column-fill
+                </h1>
+                <p>
+                    Esta propiedade CSS define como o preenchimento do conteúdo dos elementos divididos
+                    em colunas será distribuido.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong>balance, auto, initial, inherit e unset</p>
+                <p><strong>Valor Padrão:</strong>balance</p>
+                <p><strong>Valor Herdado:</strong>Não</p>
+            </div>
+        </section>
+
+        <section class="principal-teste">
+
+            <div class="content" id="a">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque numquam, eos minima harum facere
+                doloribus iure eum. Eos accusamus consequatur numquam dignissimos, quibusdam nisi dolore quasi illo,
+                aliquid minus iste?
+            </div>
+            <div class="content" id="b">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat voluptatem tempora ipsam culpa
+                sunt dolorum beatae nesciunt reiciendis laboriosam aperiam, odit officia amet dolor quaerat iusto qui
+                modi ipsum.
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
