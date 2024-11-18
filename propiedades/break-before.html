@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Break-before</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80vw;
+    }
+
+    h2 {
+        color: #f4760c;
+        break-before: page;
+    }
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Propriedade break-before
+                </h1>
+                <p>
+                    Esta propiedade CSS define se haverá uma quebra de página. coluna ou região
+                    antes de um determinado elemento começar. Muito útil para impressões
+                </p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Valores</h2>
+                <p><strong>Valores possíveis:</strong> auto, all, always, avoid
+                    , avoid-column, avoide-page, avoid-region, column, left,
+                    page, recto, region, right, verso, initial, inherit e unset</p>
+                <p><strong>Valor Padrão:</strong>auto</p>
+                <p><strong>Valor Herdado:</strong>Não</p>
+            </div>
+        </section>
+
+        <section class="principal-teste">
+
+            <div class="content">
+               <div class="content2">
+                <h2>Ferrari</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestias rerum aspernatur a
+                    asperiores magni molestiae, perspiciatis labore blanditiis culpa iure placeat enim soluta distinctio
+                    nemo. Voluptatum iure atque odio.</p>
+            </div>
+
+                <h2>Porshie</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestias rerum aspernatur a
+                    asperiores magni molestiae, perspiciatis labore blanditiis culpa iure placeat enim soluta distinctio
+                    nemo. Voluptatum iure atque odio.</p>
+            </div>
+
+                <h2>Lamborguini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestias rerum aspernatur a
+                    asperiores magni molestiae, perspiciatis labore blanditiis culpa iure placeat enim soluta distinctio
+                    nemo. Voluptatum iure atque odio.</p>
+               </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
