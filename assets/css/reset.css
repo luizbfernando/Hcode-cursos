@@ -17,9 +17,14 @@ section {
     text-align: center;
     margin: 1%;
     min-height: 20em;
-    width: min-content;
+    width: fit-content;
+    max-width: 40em;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+code {
+    font-size: large;
 }

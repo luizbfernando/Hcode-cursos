@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Introdução ao Sass</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    O que é o Sass
+                </h1>
+                <p>
+                    É uma linguagem de extensão (dlc) de folhas de estilos de nível profissional mais madura,
+                    estável e poderosa.
+                </p>
+                <p>É compatível com todas as versões do CSS</p>
+                <p>Tem sido apoiado ativamente por mais de 14 anos e tem sido escolhido pela indústria como
+                    a principal extensão do CSS
+                </p>
+
+                <h2>
+                    Por que usar Sass?
+                </h2>
+                <p>
+                    Os pré-processadores são linguagens de script que estendem os recursos padrão do CSS
+                </p>
+                <p>
+                    Eles permitem usar a lógica dentro do código CSS, como variáveis, alinhamento, herança,
+                    mixins, funções e operações mateméticas
+                </p>
+                <p>
+                    Os pré-processadores CSS facilitam a automatização de tarefas repetitivas, reduzem os
+                    números de erros e inchaço do código, criam fragmentos de código reutilizáveis e
+                    garantem compatibilidade com versões anteriores
+                </p>
+
+            </div>
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Linguagem</h2>
+                <h3>CSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                    } <br>
+                    <br>
+                    body header { <br>
+                        background-color: #fff; <br>
+                        color: black; <br>
+                        height: 64px; <br>
+                        padding: 8px; <br>
+                    } <br>
+                    <br>
+                    body header a { <br>
+                        text-decoration: none; <br>
+                    } <br>
+                    <br>
+                </code>
+
+                <h3>SCSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                        header { <br>
+                            background-color: #fff; <br>
+                            color: black; <br>
+                            height: 64px; <br>
+                            padding: 8px; <br>
+                            a { <br>
+                            text-decoration: none; <br>
+                        } <br>
+                    } <br>
+
+                } <br>
+                </code>
+                <h3>SASS</h3>
+                <code>
+                <!-- 
+                    body 
+                 margin: 0;
+                 background-color: black;
+                 header
+                  background-color: #fff;
+                  color: black;
+                  height: 64px;
+                  padding: 8px;
+                  a
+                   text-decoration: none; -->
+                </code>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
