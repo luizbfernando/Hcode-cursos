@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Instalação e configuração</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Instalando o Sass
+                </h1>
+                <h2>Requisitos</h2>
+                <p>
+                    Node.js (No windows). Para instalar por linha de comando, digite 
+                </p>
+                <p>
+                    <code>
+                        npm install -g sass
+                    </code>
+                </p>
+
+                <p>O sass irá monitorar o diretório src/sass buscando por alterações, e irá
+                    compilar o CSS final para a pasta dist/assets/css
+                </p>
+
+            </div>
+        </section>
+
+            <section class="principal-css">
+                <div class="content">
+                    <h2>O parâmetro --watch</h2>
+                    <p>É possivel monitorar um arquivo ou um diretório com a flag --watch. A flag
+                        --watch irá avisar toda vez que um diretório monitorado for alterado, e então
+                        irá recompilar o arquivo sass
+                    </p>
+                    <p>
+                        Para ativar o monitoramento de um arquivo sem ter que fazer isso manualmente, basta
+                        adicionar o comando --watch:
+                        sass -watch input.scss output.css
+                    </p>
+
+                    <h2>Monitorando um diretório</h2>
+                    <p>É possível monitorar um diretório completamente, e gerar um código correspondente
+                        em outro diretório, basta utilizar os dois pointos :
+                    </p>
+                    <p>
+                        <code>
+                            sass --watch src/sass:dist/assets/css
+                        </code>
+                    </p>
+                    <p></p>
+
+                </div>
+            </section>
+
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Linguagem</h2>
+                <h3>CSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                    } <br>
+                    <br>
+                    body header { <br>
+                        background-color: #fff; <br>
+                        color: black; <br>
+                        height: 64px; <br>
+                        padding: 8px; <br>
+                    } <br>
+                    <br>
+                    body header a { <br>
+                        text-decoration: none; <br>
+                    } <br>
+                    <br>
+                </code>
+
+                <h3>SCSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                        header { <br>
+                            background-color: #fff; <br>
+                            color: black; <br>
+                            height: 64px; <br>
+                            padding: 8px; <br>
+                            a { <br>
+                            text-decoration: none; <br>
+                        } <br>
+                    } <br>
+
+                } <br>
+                </code>
+                <h3>SASS</h3>
+                <code>
+                <!-- 
+                    body 
+                 margin: 0;
+                 background-color: black;
+                 header
+                  background-color: #fff;
+                  color: black;
+                  height: 64px;
+                  padding: 8px;
+                  a
+                   text-decoration: none; -->
+                </code>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
