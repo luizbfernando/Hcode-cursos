@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Nesting</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                   O que é nesting?
+                </h1>
+                <p>Nesting ou alinhamento em inglês é um recurso cujo objetivo é tornar a vida
+                    do programador mais fácil
+                </p>
+                    Ajudando a evitar e repetição de seletores, o nesting nos permite escrever
+                    um bloco de estilo dentro de outro bloco de estilo, deixando o CSS3 bem parecido com
+                    o HTML5
+                </p>
+
+                <h2>Perigo!</h2>
+                <p>
+                    Ao se acustumar com isso, é comum que desenvolvedores se sintam motivados a criar
+                    todos os estilos aninhados e isso pode se tornar um problema para a vizualização 
+                    do código e também no tamanho final do seu arquivo CSS. Lembre-se de que cada 
+                    aninhamento irá gerar um seletor mais específico que por sua vez produzirá um
+                    arquivo maior e que precisará de mais banda de conexão para ser baixado.
+                </p>
+
+            </div>
+        </section>
+
+            <section class="principal-css">
+                <div class="content">
+                    <h2>Lista de seletores</h2>
+                    <p>É possivel fazer o aninhamento da lista de seletores que são separados por 
+                        vírgula. O sass é inteligente para lidar com essa situação e irá criar 
+                        uma lista de seletores no arquivo CSS final gerando assim um resultado menor
+                    </p>
+                   
+                    <h2>Combinadores de seletor</h2>
+                    <p>Você também pode aninhar seletores que usam combinadores como: <br>
+                        <ul>
+                            <li>Descendente</li>
+                            <li>Filho direto</li>
+                            <li>Irmão Geral</li>
+                            <li>Irmão adjacente</li>
+                        </ul>
+                    </p>
+                    <p>
+                        É possível colocar o combinar no final do seletor pai, no início do seletor filho,
+                        ou mesmo sozinho entre os dois
+                    </p>
+                    <p></p>
+
+                </div>
+            </section>
+
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Linguagem</h2>
+                <h3>CSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                    } <br>
+                    <br>
+                    body header { <br>
+                        background-color: #fff; <br>
+                        color: black; <br>
+                        height: 64px; <br>
+                        padding: 8px; <br>
+                    } <br>
+                    <br>
+                    body header a { <br>
+                        text-decoration: none; <br>
+                    } <br>
+                    <br>
+                </code>
+
+                <h3>SCSS</h3>
+                <code>
+                    body { <br>
+                        margin: 0; <br>
+                        background-color: black; <br>
+                        header { <br>
+                            background-color: #fff; <br>
+                            color: black; <br>
+                            height: 64px; <br>
+                            padding: 8px; <br>
+                            a { <br>
+                            text-decoration: none; <br>
+                        } <br>
+                    } <br>
+
+                } <br>
+                </code>
+                <h3>SASS</h3>
+                <code>
+                <!-- 
+                    body 
+                 margin: 0;
+                 background-color: black;
+                 header
+                  background-color: #fff;
+                  color: black;
+                  height: 64px;
+                  padding: 8px;
+                  a
+                   text-decoration: none; -->
+                </code>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
