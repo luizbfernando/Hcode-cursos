@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Variáveis</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    O que são variáveis no Sass?
+                </h1>
+                <p>Semnpre que for preciso usar o mesmo valor em vários lugares, é recomendado usar
+                    variáveis
+                </p>
+                As variáveis no Sass são simples: basta atribuir um valor em um nome que começa com
+                $ e, em seguida, pode se referir a este esse com o nome em vez do própio valor
+                </p>
+
+                <p>
+                    Apesar de sua simplicidade, elas são umas das ferramentas mais úteis no sass
+                </p>
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Variáveis do Saas X Variáveis do CSS</h2>
+                <p>O CSS possui variáveis nativamente mas essas são bem diferentes das do Saas
+                </p>
+
+                <ul>
+                    <li>Variáveis escritas no Saas são totalmente compiladas, gerendo um código final
+                        estático já as variáveis do CSS são mantidas no arquivo final .css
+                    </li>
+                    <li>Variáveis no Saas sempre terão o mesmo valor, o que não acontece no CSS.</li>
+                    <li>Variáveis no Saas são imperativas, ou seja, se você mudar seu valor após sua
+                        declaração, o valor anterior permanece o mesmo. Já se isso for feito no CSS,
+                        como as variáveis são declarativas, o valor afetará o uso anterior e futuro da
+                        variável
+                    </li>
+
+                </ul>
+
+                </p>
+
+            </div>
+        </section>
+
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Utilizando variáveis</h2>
+                <code>
+                    <strong>SASS</strong> <br>
+                    $variável: 10px; <br>
+                    .class { <br>
+                        value: $variável; <br>
+                    } <br>
+                </code>
+                <code>
+                    <strong>CSS</strong> <br>
+           
+                    .class { <br>
+                        value: 10px; <br>
+                    } <br>
+                </code>
+
+                <p>Hífen e underscore são iguais. Isso significa que $font-size = $font_size</p>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

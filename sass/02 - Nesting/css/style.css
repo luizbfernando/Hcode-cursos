@@ -19,3 +19,15 @@ body {
   display: flex;
   margin-bottom: 32px;
 }
+#chat li .avatar {
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+#chat li .avatar img {
+  border-radius: 50%;
+  width: 48px;
+}
+#chat li .message {
+  flex: 1;
+}

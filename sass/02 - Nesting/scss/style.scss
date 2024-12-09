@@ -17,6 +17,18 @@ body {
     list-style: none;
     li {
         display: flex;
-        margin-bottom: 32px;
+        margin-bottom: 32px; 
+        .avatar {
+          padding: 0 16px;
+          display: flex;
+          align-items: flex-end;
+          img {
+            border-radius: 50%;
+            width: 48px;
+        }
+        }
+        .message {
+            flex: 1;
+        }
     }
 }
