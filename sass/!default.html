@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Valor padrão default</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    A Flag !default
+                </h1>
+                <p>
+                    Geralmente, quando você atribui um valor a uma variável, se essa variável já tiver um valor
+                    , <strong>seu valor antigo é sobrescrito</strong>. Mas se você estiver escrevendo
+                    uma biblioteca Sass, convém permitir que seus usuários configurem as variáveis de sua
+                    biblioteca antes de usa-las para gerar CSS
+                </p>
+                    Para tornar isso possível,
+                     o Sass fornece o sinalizador <strong><code>!defult</code></strong>.Isso atribui um valor
+                     a uma variável apenas se essa variável não for definida ou seu valor for nulo. Caso
+                     contrário, o valor existente não será usado.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Como utilizar</h2>
+                Variáveis definidas com !default pode ser configuradas ao carregar um módulo com a regra @use.
+                Bibliotecas Sass costumam usar variáveis !default para permitir que seus usuários configurem
+                o CSS da biblioteca.
+               
+            </div>
+        </section>
+
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                Sintaxe: <br>
+                <code>
+                    @use <-url> with (<-variable>:<-value>,<-variable>: <-value>).
+                </code>
+                
+                
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

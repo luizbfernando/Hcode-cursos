@@ -21,7 +21,7 @@ section {
     max-width: 40em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
 }
 

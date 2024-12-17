@@ -1,0 +1,99 @@
+$corPrimaria: #00F!default;
+$corPrimariaTexto: #FFF!default;
+$cantos: 0!default;
+
+* {
+    box-sizing: border-box;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        //esse & impede que a declaração não fique separada no css, causando assim um erro
+        color: $corPrimaria;
+    }
+}
+
+//Para o live server dectectar o style.css, é nescessário salvar o style.scss manualmente usando o ctrl + s
+
+.button {
+    background-color: $corPrimaria;
+    color: white;
+    padding: 8px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: $cantos;
+
+    &:hover {
+        background-color: rgba($corPrimaria, .8);
+    }
+}
+
+#logo {
+    color: $corPrimaria;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0px 16px;
+
+    nav {
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+main {
+    margin: 15vw;
+    padding-right: 320px;
+    background-image: url(https://picsum.photos/id/1060/200/400
+    );
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    min-width: 400px;
+    h1{
+        font-weight: bold;
+        font-weight: 48px;
+        span {
+            color: $corPrimaria;
+        }
+        small {
+            display: block;
+            font-weight: 100;
+            font-size: 24px;
+        }
+    }
+    p {
+        margin-bottom: 60px;
+    }
+    .button {
+        padding: 16px 64px
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    font-size: 12px;
+    color: #999;
+}
