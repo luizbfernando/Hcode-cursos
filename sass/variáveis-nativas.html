@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Variáveis nativas e escopo de variável</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Variáveis nativas
+                </h1>
+                <p>Também conhecidas como built-in, são variáveis que não podem ser alteradas (como o const
+                    do javascript).
+
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Escopo de variáveis</h2>
+                <p>
+                    As variáveis declaradas no nível superior de uma folha de estilo são globais
+                </p>
+                <p>Isso significa que elas podem ser acessadas em qualquer lugar em seu módulo após
+                    terem sido declaradas.
+                </p>
+                <p>Mas isso não é verdade para todas as variáveis. Aquelas declaradas em blocos(chaves no
+                    SCSS ou código identado no CSS) são geralmente locais e só podem ser acessadas dentro do
+                    bloco em que foram declaradas(como o let no javascript)</p>
+
+                <h2>
+                    Shadowing - sombreamento
+                </h2>
+                <p>Variáveis locais podem ser declaradas com o mesmo nome de uma variável global.</p>
+                <p>Se isso acontecer, na verdade existem duas variáveis diferentes com o mesmo nome: 
+                    uma local e outra global.
+                </p>
+                <p>
+                    Isso ajuda a garantir que um autor escrevendo uma variável local não altere 
+                    acidentalmente o valor de uma global da qual ele sequer tem conhecimento.
+                </p>
+
+
+            </div>
+        </section>
+
+        </section>
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Utilizando variáveis built-in</h2>
+
+                <code>
+                    @use "sass:math" as math; <br>
+                    math.$pi: 0; <br>
+                    <!-- Não é possível atribuir o valor a uma variável interna. Erro -->
+                </code>
+                <code>
+                    <p><strong>Arquivo style.scss</strong></p>
+                    $variavel-global: 50px; <br>
+                    <br>
+                    .content { <br>
+                        $variavel-local: 20px; <br>
+                        margin-top: $variavel-global; <br>
+                        margin-left: $variavel-local; <br>
+                    }
+                    <br>
+                    .sidebar { <br>
+                        margin-top: $variavel-global; <br>
+                    } <br>
+                    <p>Erro: margin-left: $variavel-local;</p>
+                </code>
+
+                <code>
+                    <p><strong>Arquivo style.css</strong></p>
+                    .content { <br>
+                        margin-top: 50px; <br>
+                        margin-left: 20px; <br>
+                    } <br>
+                    <br>
+                    .sidebar { <br>
+                        margin-top: 50px; <br>
+                    }
+                </code>
+
+                <h3>Shadowing - sombreamento</h3>
+
+                <code>
+                    <p><strong>Arquivo style.scss</strong></p>
+                    $titulo: `Roboto´; <br>
+                    .content { <br> 
+                        $titulo: `Calibri Light´; <br>
+                        font-family: $titulo; <br>
+                    } <br>
+
+                    .sidebar { <br>
+                        font-family: $titulo; <br>
+                    } <br>
+
+                </code>
+                <code>
+                    <p><strong>Arquivo style.css</strong></p>
+                    .content { <br>
+                        font-family: `Calibri Light´;<br>
+                    } <br>
+                    .sidebar { <br>
+                        font-family: `Roboto´; <br>
+                    } <br> 
+                </code>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+$color: #7f808c;
+$primary: #0176ff;
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+    font-family: sans-serif;
+    color: $color;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    li {
+        background-color: $background-color;
+        display: flex;
+        margin-bottom: 32px;
+        .avatar {
+            padding: 0 16px;
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                border-radius: 50%;
+                width: 48px;
+            }
+        }
+        .menssage {
+            $background-color: #f5f6fa;
+            flex: 1;
+            padding: 16px;
+            border-radius: 8px;
+            border-bottom-left-radius: 0;
+            strong {
+                color: #242939;
+            }
+        }
+        &.me {
+             $background-color: $primary;
+             flex-direction: row-reverse;
+            .menssage {
+                background-color: $background-color;
+            }
+        }
+    }
+
+}
