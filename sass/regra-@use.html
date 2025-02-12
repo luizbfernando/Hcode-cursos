@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <title>Regras de estilo</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    A regra @use
+                </h1>
+                <p>
+                    Essa regra carrega mixins, funções e
+                    variáveis de outras folhas de estilo CSS e combina CSS de várias folhas de estilo.
+                    <br>
+                    <strong>Folhas de estilos carregadas usando o @use são chamadas de módulos.</strong>
+                    O SAAS também fornece módulos integrados com muitas funções úteis.
+                </p>
+                <p>
+                    A regra @use mais simples é escrita usando o @use "< url >" que carrego o módulo
+                        fornecido. Todos os estilos carregados dessa forma serão incluídos exatamente uma vez
+                        na saída CSS compilada, não importa quantos estilos sejam carregados
+                </p>
+                <p>Dica: Como o @use adiciona Namespacesa aos nomes dos membros, é seguro escolher nomes
+                    muito simples como $radius ou $width ao escrever uma folha de estilo
+                    
+                </p>
+            </div>
+        </section>
+
+        <section class="principal-teste">
+            <div class="content">
+                <h2>Como utilizar</h2>
+
+                <code>
+                    <p><strong>Arquivo corner.scss</strong></p>
+                    $radius: 3px; <br>
+                    <br>
+                    @mixin rounded { <br>
+                        border-radius: radius <br>
+                    }
+                    <br>
+                <code>
+                    <p><strong>Arquivo style.css</strong></p>
+                    @use "src/corners"; <br>
+                    .button { <br>
+                        @include corners.rounded; <br>
+                        padding: 5px + corner.$radius; <br>
+                    } <br>
+                </code>
+
+                <h3>Arquivo final - style.css</h3>
+
+                <code>
+                    <p><strong>Arquivo style.scss</strong></p>
+                    .button { <br> 
+                        border-radius: 3px; <br>
+                        padding: 8px; <br>
+                    } <br>
+                </code>
+
+                <code>
+                    <p><strong>Utilizando Namespaces</strong></p>
+                    @use "src/corners"; as c <br>
+                    .button { <br>
+                        @include c.rounded; <br>
+                        padding: 5px + c.$radius; <br>
+                    } <br>
+                    <!-- Muito útil para url/nomes longos -->
+                </code>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>

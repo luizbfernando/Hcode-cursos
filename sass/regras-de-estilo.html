@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <title>Regras de estilo</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="content">
+                <h1>
+                    Regras de estilo
+                </h1>
+                <p>Modificam um corpotamento no SaSS
+                </p>
+            </div>
+        </section>
+
+        <section class="principal-css">
+            <div class="content">
+                <h2>Conhecendo as regras</h2>
+                <p>Muitas funcionalidades extras no SASS vêm na forma de novas regras básicas que são
+                    adicionadas ao CSS
+                </p>
+                <p>
+                    A seguir listamos as regras presentes no SASS e suas funcionalidades
+                </p>
+
+                <p>
+                    <strong style="color: #c08a9d">@use</strong> carrega minixs, funcões variáveis de outras folhas de
+                    estilo SASS e combina
+                    CSS de várias folhas de estilo;
+                </p>
+                <p> <strong style="color: #c08a9d">@foward</strong> carrega folha de estilo SASS e disponibiliza seus
+                    minxs, funcões e variáveis
+                    quando sua folha de estilo é carregada com a regra @use;
+                </p>
+                <p>
+                    @import estende o CSS em regra de para carregar estilos , minxs, funções e variáveis
+                    de outras folhas de estilo.
+                </p>
+                <p>
+                    @mixin e @include facilitam a reutilização de pedaços de estilos.
+                </p>
+                <p>
+                    @function define funções personalizadas que podem sesr usadas em expressões SassScript
+                </p>
+                <p>
+                    @extend permite que os seletores herdem os estilos uns dos outros
+                </p>
+                <p>
+                    @art-root coloca estilos dentro da dele na raiz do documento CSS
+                </p>
+
+                <p>
+                    @error faz com a compilação falhar com uma mensagem de erro
+                </p>
+
+                <p>
+                    @warn imprive um aviso sem parar totalmente a compilação
+                </p>
+
+                <p>
+                    @debug imprime uma mensagem para fins de depuração
+                </p>
+
+                <h2>Controle de fluxo e Regras simples</h2>
+                <p>Regras de controle de fluxo como <strong style="color: #c08a8c">@if, @each,
+                    @for e @while
+                    </strong> Controlam se ou quantas vezes os estilos serão emitidos
+                </p>
+                <p>O SASS também tem um comportamento especial para regras simples de CSS: elas podem
+                    conter interpolação e podem ser aninhadas em regras de estilo. Alguns deles como 
+                    <strong  style="color: #c08a9d">@media, @suports</strong> também permitem que script
+                    SASS seja usado diretamente na própia regra sem interpolação.
+                </p>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
