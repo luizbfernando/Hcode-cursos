@@ -2,10 +2,14 @@
 
 
 ## 📌 Aprendizados
-- Operações matemáticas básicas (+, -, *, /)
-- Suporte a números decimais
-- Interface responsiva e intuitiva
-- Tema escuro com cores neutras
+- hardware e software
+- Tipos de linguagem de programaçao
+- Paradgmas de programaçao
+- Algoritimos e Teste de Mesa
+- Variaveis e Tipos de dados
+- Operadores
+- Estrutura de controle
+- Laços de repeticao
 
 
 ## 🚀 Alavancando conhecimento
